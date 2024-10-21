@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Test de Comprensión Lectora</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h2 id="titleInit">Test Número 17</Nav></h2>
+        <p id="paragraphInit">
+            Este test busca medir tu velocidad y comprensión
+            lectora.<br>
+            Te recomendamos que lo hagas en un ambiente
+            calmado, sin distracciones y con buena iluminación.<br>
+            Esta lectura la debes hacer basado en las técnicas
+            que ya hayas empezado a usar. En las primeras
+            semanas, no debes preocuparte mucho por la
+            comprensión lectora, ya que ese es un proceso que se
+            va a ir dando paulatinamente.<br>
+            Cuando des clic en INICIAR se te presentará la lectura
+            y el sistema llevará un cronómetro que medirá tu
+            velocidad. Al finalzar de leer todo el texto debes dar
+            clic en el botón TERMINAR.<br>
+        </p>
+        <button id="startButton">Iniciar</button>
+        <div id="textContainer" class="hidden">
+            <p id="textToRead">
+                Y entonces recordé a Peter Pan
+                <br><br>
+                Y un día crecí. Crecí tanto como Alicia cuando comió el pastel.
+                <br><br>
+                Ya no podía entrar en la casita de madera que mi padre había construido para mí en el patio, bajo la sombra del Siempre verde.
+                <br><br>
+                ¿En qué momento dejé de apretar la cara contra un vidrio para que del otro lado me la vieran deformada?
+                <br><br>
+                ¿Cuándo dejé de meter mis dedos índices en la boca y estirármela hasta que mi tía Aurelia me retara? : "¡No hagas eso que te vas a quedar así!"
+                <br><br>
+                ¿Cuál fue el instante en que empecé a considerar una tontería el caminar sin pisar las junturas de las baldosas o el envolverme en las cortinas y empezar a girar para después "desenvolverme" de golpe?
+                <br><br>
+                ¿Fui consciente de la última vez que hice el triple puente jugando a la Payana con una amiga, o de cuando nos tirábamos las almohadas por la cabeza con mi prima, o de la siesta en que comimos una sandía cada una y se nos llenó la panza de agua…? ¡No! Todo pasó demasiado rápido como para que pudiera darme cuenta.
+                <br><br>
+                "¡Ya sos grandota para jugar a las muñecas!" Sí, ya era grande… Y allá quedaron con sus caritas lindas las muñecas, con su carita fea la Pepona, con sus ojitos azules y movibles el muñeco Marcelino y el bebote de goma que tomaba el tetero y hacía pis.
+                <br><br>
+                ¿Es que no me daba cuenta de que había dejado de interesarme sacar la lengua en el gesto de buscar pelea con otra chica? La carrera al kiosco para comprarme la última historieta ya no me generaba la misma alegría, y, lo que era más grave en mí (lectora incondicional), era que se me estaban viniendo abajo los príncipes y las reinas malvadas y las Cenicientas y las hermanas feas. Eso era muy muy grave; ¡sí señor!
+                <br><br>
+                ¿Y la Rayuela marcada con tiza en la vereda? Ya no importaba llegar al "cielo", ya no importaba inflar bombitas de agua para los carnavales, ya no importaba hacer cartitas para los Reyes Magos, ¡si me habían dicho que eran los padres! Entonces, ¿para qué tanto dejar agua y pasto para los camellos que venían cansados? ¿No hubiera sido más fácil que lo dijeran desde un principio?
+                <br><br>
+                ¿Cuándo fue que dejé de jugar a la Mancha venenosa? ¿Cuándo de buscar un escondite bien seguro para que mis amigos no me encontraran? ¿Cuándo dejé de odiar la sopa hasta el límite de preferir el coscorrón por negarme a tomarla?
+                <br><br>
+                ¿Acaso el "Ring-raje" había pasado de moda? ¿Por qué ya no era tentador cuando caía un golpe de piedra, salir corriendo afuera y llenarme la boca de granizo?
+                <br><br>
+                Una tarde perdí todas las figuritas; me las ganaron con trampa y no las defendí. ¿Qué me estaba pasando?
+                <br><br>
+                Y entonces recordé a Peter Pan. Y entendí por qué no había querido crecer y se había quedado niño por siempre en la isla de Nunca Jamás.
+                <br><br>
+                Fue entonces que me inventé un mundo propio. Y cuando encuentro a alguien que puede comprender lo que es un mundo propio; cuando veo al niño que todavía existe en los ojos y en la sonrisa de un adulto, me digo: "Peter Pan está aquí; puedo charlar un rato con él."
+                <br><br>
+                <a href="https://www.encuentos.com/cuentos-cortos/y-entonces-recorde-a-peter-pan">https://www.encuentos.com/cuentos-cortos/y-entonces-recorde-a-peter-pan</a> — Escritora Dora Leonor Ponce – 546 palabras
+            </p>            
+                         
+            <div id="timer">Tiempo transcurrido: <span id="timerValue">0</span> segundos</div>
+            <button id="finishButton">Terminar</button>
+        </div>
+        <div id="questionnaire" class="hidden">
+            <h2>Test de Comprensión Lectora</h2>
+            <form id="quizForm">
+                <ol id="questionList">
+                    <!-- Las preguntas se añadirán aquí dinámicamente con JavaScript -->
+                </ol>
+                <button type="submit">Terminar</button>
+            </form>
+        </div>
+        <div id="results" class="hidden">
+            <h2>Resultados</h2>
+            <div id="wordCount">Palabras leídas: <span id="wordCountValue"></span></div>
+            <div id="readingSpeed">Velocidad de lectura: <span id="readingSpeedValue"></span> palabras por minuto</div>
+            <div id="comprehension">Comprensión lectora: <span id="comprehensionValue"></span>%</div>
+            <div id="timeResult">Tiempo transcurrido: <span id="timeResultValue"></span> segundos</div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
